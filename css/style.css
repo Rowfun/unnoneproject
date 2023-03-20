@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    width: 1328px;
+    margin:auto;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.align{
+    align-items:center;
+}
+.justify{
+    justify-content:space-between;
+}
+body{
+    background-color: #ebe3cd;
+    padding-top:35px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* *NAV SECTION STARTS STARTS */
+nav{
+    background-color: #111f2f;
+    width:100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius:50px;
+}
+nav .submenu{
+    position:absolute;
+    background-color: #df571d;
+    width: 250px;
+    left:0;
+    margin-top:50px;
+    font-size:16px;
+    font-weight:700;
+    visibility:hidden;
+    opacity:0;
+    transition:0.35s;
+}
+nav li:hover > .submenu{
+    margin-top:0;
+    opacity:1;
+    visibility:visible;
+}
+nav .submenu li:hover > a{
+    background-color: #12202f;
+    color:#ffffff;
+    display:block;
+}
+nav .submenu .submenu{
+    left:100%;
+    top:0;
+}
+
+nav .submenu li{
+    border-bottom:2px solid #ffffff;
+    width: 100%;
+    color:black;
+}
+nav .submenu li:last-child{
+    border:none;
+}
+nav .logo{
+    width: 15%;
+    text-align:center;
+}
+nav .menu{
+    text-align:center;
+    width: 70%; 
+    font-size:17px;
+    font-weight:400;
+}
+nav .sidebar{
+    width: 15%;
+    text-align:right;
+}
+nav .menu ul li{
+    display:inline-block;
+    position:relative;
+  
+}
+nav .menu ul li > a{
+    display:inline-block;
+    padding: 31px 65px;
+    color:#ffffff;
+}
+nav .sidebar a{
+    color:#6bb99c;
+    padding-right:71px;
+}
+/* *NAV SECTION ENDS HERE */
+/* *BANNER SECTION STARTS HERE */
+#banner{
+    background-image: url(../img/mein-banner.webp);
+    background-position:right;
+    background-repeat: no-repeat;
+  
+    height:810px;
+    margin-right:60px;
+}
+#banner .content{
+    width: 45%;
+     margin-left:50px;
+}
+#banner .content h1{
+    margin-top:131px;
+    font-family: 'Playfair Display', serif;
+    font-size:81px;
+    font-weight:black;
+    margin-bottom:37px;
+    color:#12202f;
+}
+#banner .content h2{
+    font-size:29px;
+    color:#12202f;
+    font-weight:400;
+}
+#banner .content p{
+    font-size:17px;
+    font-weight:700;
+    margin-top:27px;
+    color:#12202f;
+}
+#banner .content .button a{
+    display:inline-block;
+    padding: 16px 42px;
+    margin-top:45px;
+    color:rgb(255, 255, 255);
+    background-color: #df581e;
+    font-size:21px;
+    font-weight:800;
+    border-radius:30px;
+}
+#banner .content .read-more a{
+    font-size:21px;
+    font-weight:800;
+    color:#12202f;
+    margin-left:44px;
+}
+/* *BANNER SECTION ENDS HERE */
+/* *DATE SECTION STARTS HERE */
+#date .top a {
+    display:inline-block;
+    margin-top:30px;
+    font-size:21px;
+    font-weight:800;
+    color:#12202f;
+    margin-right:6px;
+    margin-left:30px;
+}
+.date-box{
+    background-color: #faf8ef;
+    width:100%;
+    margin-top:81px;
+    border-radius:35px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.box1 input{
+   display:block;
+   background-color: #ebe3cd;
+   width:214px;
+   height:93px;
+   border-radius:20px;
+   margin:0 17px 0 17px;
+}
+.box3 input{
+   display:block;
+   background-color: #ebe3cd;
+   width:332px;
+   height:93px;
+   border-radius:20px;
+   margin:0 17px 0px 17px;
+   text-align:center;
+}
+.box3 label{
+   display:inline-block;
+   margin-left:0px;
+}
+label{
+    margin-left:70px;
+    font-size:21px;
+    font-weight:800;
+}
+form{
+    display:inline-block;
+    padding:42px 57px;
+}
+form .button a{
+    display:inline-block;
+    padding:37px 43px;
+    margin-left:90px;
+    margin-top:16px;
+    border-radius:25px;
+    background-color: #6bb99c;
+    color:#ffffff;
+    border:none;
+    font-size:21px;
+    font-weight:400;
+}
+
+/* *DATE SECTION ENDS HERE */
+/*  *Food Categories section starts here  */
+ .headding{
+    text-align:center;
+    margin-top:154px;
+}
+ .headding h2{
+    font-size:29px;
+    font-weight:400;
+    color:#eaa73b;
+}
+.headding h1{
+    font-family: 'Playfair Display', serif;
+    font-weight:black;
+    font-size:50px;
+}
+#Food-Categories .box-1{
+    width:calc(30% - 40px);
+    margin:0 20px;
+    border:1px solid black;
+    text-align:center;
+    border-radius:30px;
+    padding:40px;
+    background-color: #f9f7ef;
+    margin-top:91px;
+    transition:0.20s;
+}
+#Food-Categories .box-1 .content{
+    margin-top:41px;
+}
+#Food-Categories .box-1 .content h1{
+    font-family: 'Playfair Display', serif;
+    font-size:40px;
+    font-weight:black;
+    color:#12202f;
+}
+#Food-Categories .box-1 .content p{
+    padding-top:29px;
+    line-height:25px;
+    font-size:17px;
+    font-weight:700;
+}
+#Food-Categories .box-1 .content a{
+    padding:27px 32px;
+    display:inline-block;
+    background-color: #df571d;
+    margin-top:32px;
+    color:#ebe3cd;
+    border-radius:35px;
+    font-size:21px;
+    font-weight:bold;
+    transition:0.35s;
+}
+#Food-Categories .box-1:hover h1{
+   color:#ffffff;
+}
+#Food-Categories .box-1:hover{
+    background-color: #111f2f;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color:#ffffff;
+}
+#Food-Categories .box-1 .content a:hover{
+    background-color: #6bb99c;
+    color:#12202f;
+}
+/*  *Food Categories section ends here  */
+/* *We care about you section starts here */
+#about .headding h2{
+    color:#6bb99c;
+}
+#about .headding span a{
+    display:inline-block;
+    padding:22px 38px;
+    background-color: #6bb99b;
+    margin-top:28px;
+    font-size:21px;
+    color:#ffffff;
+    font-weight:400;
+    border-radius:35px;
+}
+#about{
+    background-image:url(../img/banner-2.webp);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 100%;
+    height:858px;
+}
+/* *We care about you section ends here */
+/* *Our Restaurant section starts here  */
+#Our-Restaurant{
+    margin-top:85px;
+}
+#Our-Restaurant .headding h2{
+    margin-bottom:15px;
+}
+#Our-Restaurant .headding{
+    text-align:left;
+    margin-bottom:40px;
+}
+#Our-Restaurant .cnt p{
+    font-size:17px;
+    font-weight:700;
+  
+}
+#Our-Restaurant .cnt{
+    text-align:justify;
+    width:40%;
+    padding-right:140px;
+    line-height:35px;
+}
+#Our-Restaurant .img1{
+    width:60%;
+}
+#Our-Restaurant .button a{
+    padding:20px 39px;
+    display:inline-block;
+    background-color: red;
+    border-radius:40px;
+    margin-top:20px;
+    font-size:21px;
+    font-weight:800;
+    color:#ebe3cd;
+}
+.img1 img{
+  width: 100%;
+}
+/* *Our Restaurant section ends here  */
+/* *Ingredients section starts here */
+#Ingredients{
+    margin-top:115px;
+}
+#Ingredients .cnt-2{
+    width:40%;
+    text-align:left;
+}
+#Ingredients .img-4{
+    width:60%;
+   
+}
+#Ingredients .img-4 img{
+    width:80%;
+   
+}
+#Ingredients span a{
+    padding:22px 38px;
+    background-color: #6bb99b;
+    margin-top:28px;
+    font-size:21px;
+    color:#ffffff;
+    font-weight:400;
+    border-radius:35px;
+}
+#Ingredients .headding-3 h2{
+    font-size:29px;
+    font-weight:400;
+    color:#eaa73b;
+}
+#Ingredients .headding-3{
+    padding:30px;
+}
+#Ingredients .headding-3 p{
+    text-align:justify;
+    margin-top:20px;
+    line-height:35px;
+    font-size:17px;
+    font-weight:700;
+    padding-right:30px;
+}
+#Ingredients .headding-3 h1{
+    font-family: 'Playfair Display', serif;
+    font-weight:black;
+    font-size:50px;
+}
+.cnt-2 .button a{
+    display:inline-block;
+}
+
+/* *Ingredients section ends here */
+/* *Words from section starts here */
+#Words-from{
+    margin-top:168px;
+}
+#Words-from .container{
+    background-image: url(../img/banner-5.webp);
+    background-repeat: no-repeat;
+}
+#Words-from .box{
+    width:32%;
+    padding-top:170px;
+    padding-bottom:142px;
+    padding-left:82px;
+    
+}
+#Words-from .box h2{
+    font-size:29px;
+    font-weight:400;
+    color:#eaa73b;
+}
+#Words-from .box h1{
+    font-family: 'Playfair Display', serif;
+    font-weight:black;
+    font-size:50px;
+}
+#Words-from .box p{
+    text-align:justify;
+    margin-top:20px;
+    line-height:35px;
+    font-size:17px;
+    font-weight:700;
+}
+#Words-from .box span a{
+    padding:22px 38px;
+    background-color: #6bb99b;
+    margin-top:28px;
+    font-size:21px;
+    color:#ffffff;
+    font-weight:400;
+    border-radius:35px;
+    display:inline-block;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* *Words from section ends here */
+/* *What our section starts here  */
+#What-our .box103 .icon-img{
+    width:25%;
+}
+#What-our .box103{
+    padding:46px 52px;
+    background-color: #faf8ef;
+    border-radius:30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#What-our .box103 .content-71 h3{
+    display:inline-block;
+    margin-left:32px;
+    font-size:14px;
+    font-weight:800;
+    color:#ccc1a3;
+}
+#What-our .box103 .content-71 h1{
+    font-size:29px;
+    display:inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight:black;
+}
+#What-our .box103 .content-71{
+    width:75%;
+    padding-left:50px;
+
+}
+#What-our .box103 .content-71 p{
+    font-size:14px;
+    font-weight:700;
+    line-height:25px;
+    padding-top:10px;
+    padding-right:30px;
+}
+#What-our .box103 .icon-img img{
+    width:100%;
+}
+#What-our .box103{
+    width:45%;
+    border:1px solid;
+    margin-top:106px;
+} 
+#What-our span i{
+    color:#eaa73b;
+    font-size:20px;
+    margin-top:15px; 
+}
+#What-our .last-icon i{
+     color:#ccc1a3;
+}
+#What-our .box106 .icon-img{
+    width:25%;
+}
+#What-our .box106{
+    padding:46px 52px;
+    background-color: #faf8ef;
+    border-radius:30px;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#What-our .box106 .content-71 h3{
+    display:inline-block;
+    margin-left:32px;
+    font-size:14px;
+    font-weight:800;
+    color:#ccc1a3;
+}
+#What-our .box106 .content-71 h1{
+    font-size:29px;
+    display:inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight:black;
+}
+#What-our .box106 .content-71{
+    width:75%;
+    padding-left:50px;
+}
+#What-our .box106 .content-71 p{
+    font-size:14px;
+    font-weight:700;
+    line-height:25px;
+    padding-top:10px;
+    padding-right:30px;
+}
+#What-our .box106 .icon-img img{
+    width:100%;
+}
+#What-our .box106{
+    width:45%;
+    border:1px solid;
+    margin-top:45px;
+} 
+#What-our span i{
+    color:#eaa73b;
+    font-size:20px;
+    margin-top:15px; 
+}
+#What-our .last-icon i{
+     color:#ccc1a3;
+}
+/* *What our section ends here  */
+/* *Subscirbe section starts here */
+#Subscirbe{
+    background-image:url(../img/last-benner.webp);
+    background-position:center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+#Subscirbe .headding{
+    margin-bottom:48px;
+}
+#Subscirbe .input1 input{
+    display:block;
+    padding:36px 81px;
+    margin:auto;
+    width:60%;
+    margin-bottom:37px;
+    border-radius:50px;
+    background-color: #cbc1a3;
+    color:black;
+}
+#Subscirbe .input2 input{
+    display:block;
+    padding:48px 0 150px 81px ;
+    margin:auto;
+    width:60%;
+    margin-bottom:37px;
+    border-radius:30px;
+    background-color: #cbc1a3;
+    color:black;
+}
+#Subscirbe .button{
+    display:block;
+    text-align:center;
+}
+#Subscirbe .button a{
+    padding:27px 61px;
+    display:inline-block;
+    text-align:center;
+    background-color: #6bb99b;
+    border-radius:35px;
+    font-size:21px;
+    font-weight:800;
+    color:#3a3a3a;
+    margin-bottom:82px;
+}
+
+/* *Subscirbe section ends here */
+/*  *footer section starts here */
+#footer{
+    background-color: #fa9b2f;
+    border-radius:60px 60px 0 0;
+}
+#footer .footer-box{
+    width:30%; 
+}
+#footer .footer-box2{
+    width:40%; 
+}
+#footer .footer-box .headding h1{
+    text-align:left;
+}
+#footer .footer-box a{
+    display:block;
+    font-size:25px;
+    color:#404040;
+    padding-top:47px;
+    font-weight:800;
+}
+.footer-box2 .headding{
+    text-align:right;
+}
+.footer-box2 span input{
+    display:block;
+    margin:auto;
+    height:64px;
+    width: 499px;
+    border-radius:35px;
+    margin-top:82px;
+    background-color:transparent;
+}
+h4{
+    display:inline-block;
+    font-size:25px;
+    font-weight:800;
+    color:#404040;
+}
+.footer-box2 a{
+    display:inline-block;
+    margin-left:54px;
+    margin-top:70px;
+}
+.footer-box2 a i{
+    font-size:23px;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background-color: #fff;
+    border-radius:50%;
+    text-align:center;
+    line-height:50px;
+    color:#2b2b2b;
+}
+/*  *footer section ends here */
